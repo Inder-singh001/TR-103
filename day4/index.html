@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+          >
+            <div class="root">
+              <div class="company_details">
+                <div class="info">
+                  <div class="phn_info">
+                    <i class="fa-solid fa-phone info_icon"></i>
+                    <div class="info_text">+91 799-898-8989</div>
+                  </div>
+                  <div class="phn_info">
+                    <i class="fa-regular fa-envelope info_icon"></i>
+                    <div class="info_text magra-regular">example@gmail.com</div>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-lg dropdown-toggle region"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="flag">
+                      <img
+                        src="./images/flag.png"
+                        alt="flag"
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="region_text magra-regular">
+                      <div class="text_info">INR</div>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu text">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <div class="row brand">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-sm-3 col-12">
+                  <div class="logo">
+                    <img
+                      src="./images/brand-logo1.png"
+                      class="card-img-top"
+                      alt="logo"
+                    />
+                    <img
+                      src="./images/brand-logo.png"
+                      class="card-img-top"
+                      alt="logo"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-xxl-6 col-xl-6 col-lg-4 col-sm-4 col-12 d-flex justify-content-center"
+                >
+                  <form class="search_option" role="search">
+                    <input
+                      class="form-control me-2 magra-regular"
+                      type="search"
+                      placeholder="Search for cakes, pastries, and more..."
+                      aria-label="Search"
+                    />
+                    <div class="search_icon">
+                      <i class="fa-solid fa-magnifying-glass icon"></i>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="col-xxl-3 col-xl-3 col-lg-3 col-sm-5 col-12 d-flex justify-content-end"
+                >
+                  <div class="details">
+                    <div class="logo_sec">
+                      <i class="fa-regular fa-heart cicon"></i>
+                    </div>
+                    <div class="logo_sec">
+                      <div class="badge">0</div>
+                      <i class="fa-solid fa-cart-shopping cicon"> </i>
+                    </div>
+                    <div class="log_details">
+                      <div class="log_text magra-regular">Hi, Guest</div>
+                      <div class="profile_img">
+                        <img
+                          src="./images/profile-img.png"
+                          alt="profile_img"
+                          class="card-img-top"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-xxl navbar-expand-xl navbar-expand-lg navbar-expand-sm navbar-expand-xs"
+      >
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav" id="navItems"></ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-0 col-0">
+            <div class="root">
+              <div class="title text-center">
+                <div class="magra-bold" style="font-size: 57px">
+                  Baking Class's
+                </div>
+              </div>
+              <div class="side-text">
+                <p class="" style="font-size: 16px; margin-bottom: 40px">
+                  Available Classes: 28
+                </p>
+              </div>
+              <div class="grid_container">
+                <div class="row" id="card-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer footer_section">
+      <div class="links_box">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+            >
+              <div class="root brand_footer">
+                <div class="row">
+                  <div class="col-3 brand_img">
+                    <div class="brand_circle">
+                      <div class="img_card">
+                        <img
+                          src="./images/footer-logo.png"
+                          alt="brand"
+                          class="card-img-top"
+                        />
+                      </div>
+                    </div>
+                    <div class="shape">
+                      <div class="brand_shape"></div>
+                    </div>
+                  </div>
+                  <div class="col-9 section_link">
+                    <div class="row" id="footerLinks"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright_box text-center">
+        <div class="text-white text_sec" style="padding: 12px">
+          © 2023 | All Rights Reserved | Powered by Globiz Technology Inc.
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1cc3760187.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./util.js"></script>
+  </body>
+</html>

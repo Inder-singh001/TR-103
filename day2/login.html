@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+      }
+
+      .root {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        max-width: 800px;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #d2d2d2;
+      }
+      .circle1 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        border-radius: 50%;
+        bottom: -60px;
+        left: -100px;
+        z-index: -1;
+      }
+      .circle2 {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        background-color: rgb(222, 60, 60);
+        border-radius: 50%;
+        top: -70px;
+        right: -300px;
+        z-index: -1;
+        transform: rotate(-5deg);
+      }
+      .log_section {
+        display: flex;
+        z-index: 1;
+        align-items: center;
+        background: linear-gradient(
+          -135deg,
+          rgba(15, 162, 115, 0.74) 40%,
+          rgba(77, 213, 184, 0.758) 90%
+        );
+        border-radius: 12px;
+        position: relative;
+      }
+      .div-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px 0px 0px 12px;
+        width: 300px;
+        text-align: center;
+        padding: 24px;
+        position: relative;
+      }
+      .logo_section {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo_img {
+        width: 60px;
+        height: 60px;
+      }
+      .logo_text{
+        color: white;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .div-right {
+        width: 500px;
+        background-color: aliceblue;
+        text-align: center;
+        justify-content: center;
+        padding: 24px;
+        border-radius: 0px 12px 12px 0px;
+      }
+
+      .btn1 {
+        margin-top: 24px;
+        padding: 12px 34px;
+        border-radius: 50px;
+        background-color: aliceblue;
+        border-style: none;
+        color: #46bb8d;
+      }
+
+      .btn1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        background-color: aliceblue;
+        color: #46bb8d;
+      }
+
+      .left-heading {
+        color: aliceblue;
+      }
+
+      span {
+        font-size: small;
+      }
+
+      .right-heading {
+        color: #46bb8d;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        margin: 4px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .link-btn1 {
+        border-radius: 80%;
+        background-color: #eaeeed;
+        border-style: none;
+        padding: 12px 14px;
+      }
+
+      .link-btn {
+        background-color: #eaeeed;
+        border-radius: 80%;
+        padding: 12px 10px;
+        border-style: none;
+      }
+
+      .link-btn1:hover {
+        background-color: rgba(70, 187, 141, 0.7);
+        border-radius: 80%;
+        border-style: none;
+        padding: 12px 14px;
+      }
+
+      .link-btn:hover {
+        background-color: rgba(70, 187, 141, 0.7);
+        border-radius: 80%;
+        padding: 12px 10px;
+        border-style: none;
+      }
+
+      .btn2 {
+        padding: 12px 34px;
+        margin-top: 6px;
+        border-radius: 50px;
+        background-color: #46bb8d;
+        border-style: none;
+        color: aliceblue;
+      }
+
+      .btn2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      .right_text{
+        padding-bottom: 24px;
+        font-size: small;
+      }
+      .form-grp {
+        margin-bottom: 24px;
+      }
+
+      .input-form {
+        position: relative;
+        margin-bottom: 12px;
+      }
+
+      .icon {
+        position: absolute;
+        top: 18px;
+        left: 58px;
+      }
+
+      .input-text {
+        border-style: none;
+        background-color: #eaeeed;
+        border-radius: 8px;
+        width: 300px;
+        padding: 16px 16px 16px 36px;
+      }
+
+      .input-text:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="root">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="log_section">
+          <div class="logo_section">
+            <div class="logo_img"><img src="../day3/ANEJA .png" logo" /></div>
+            <div class="logo_text text-white">Digitalvilla</div>
+          </div>
+          <div class="div-left">
+            <h2 class="left-heading">Welcome Back!</h2>
+            <span class="left-heading"> To keep connected with us please</span>
+            <span class="left-heading"> login with your personel info </span>
+            <button class="btn1">SIGN IN</button>
+          </div>
+          <div class="div-right">
+            <h2 class="right-heading">Create Account</h2>
+            <div class="social">
+              <ul class="link-btn1">
+                <a href="https://www.facebook.com/">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </ul>
+              <ul class="link-btn">
+                <a href="https://www.google.com/account/about/">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </ul>
+              <ul class="link-btn1">
+                <a href="https://in.linkedin.com/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </ul>
+            </div>
+            <div class="right_text">or use your email for registration</div>
+            <div class="form-grp">
+              <div class="input-form">
+                <div class="icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <input type="text" placeholder="Name" class="input-text" />
+              </div>
+              <div class="input-form">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Email" class="input-text" />
+              </div>
+              <div class="input-form">
+                <div class="icon">
+                  <i class="fa-solid fa-unlock-keyhole"></i>
+                </div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="input-text"
+                />
+              </div>
+            </div>
+            <button class="btn2">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/1cc3760187.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .root {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #d2d2d2;
+      }
+      .circle1 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        border-radius: 50%;
+        bottom: -60px;
+        left: -100px;
+        z-index: -1;
+      }
+      .circle2 {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        background-color: rgb(222, 60, 60);
+        border-radius: 50%;
+        top: -70px;
+        right: -300px;
+        z-index: -1;
+        transform: rotate(-5deg);
+      }
+      .log_section {
+        z-index: 1;
+        align-items: center;
+        background: linear-gradient(
+          -135deg,
+          rgba(15, 162, 115, 0.74) 40%,
+          rgba(77, 213, 184, 0.758) 90%
+        );
+        border-radius: 12px;
+        position: relative;
+      }
+      .left-heading {
+        color: aliceblue;
+      }
+      .col-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 12px;
+        
+      }
+      .logo_section {
+        position: absolute;
+        top: 10px;
+        left:10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo_img{
+        background-color: rgba(77, 213, 184, 0.758);
+        width: 60px;
+        height: 60px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .btn-custom2:hover {
+        border-radius: 80%;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        min-width: 120px;
+        border-style: none;
+        background-color: rgba(56, 169, 151, 0.7);
+      }
+      .col-7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border-radius: 0px 12px 12px 0px;
+        padding: 24px;
+      }
+      span {
+        font-size: medium;
+        margin-bottom: 12px;
+      }
+      .right-heading {
+        color: #46bb8d;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        margin: 24px 0px;
+      }
+      a {
+        color: inherit;
+      }
+      .link-btn1 {
+        border-radius: 80%;
+        background-color: #eaeeed;
+        border-style: none;
+        padding: 12px 18px;
+      }
+      .link-btn {
+        background-color: #eaeeed;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+      }
+
+      .link-btn:hover {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background-color: rgba(70, 187, 141, 0.7);
+        border-radius: 50%;
+      }
+      .form-grp {
+        margin: 16px;
+        width: 60%;
+      }
+      .mb-3 {
+        position: relative;
+      }
+      .form-control {
+        border-style: none;
+        background-color: #eaeeed;
+        border-radius: 4px;
+        padding: 10px 10px 10px 40px;
+      }
+      .icon {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+      }
+      .btn-custom:hover {
+        border-radius: 80%;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        min-width: 120px;
+        border-style: none;
+        background-color: rgba(56, 169, 151, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container text-center">
+        <div class="row">
+          <div
+            class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+          >
+            <div class="root">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="row log_section">
+                <div class="col-5">
+                  <div class="logo_section">
+                    <div class="logo_img">
+                      <img src="ANEJA .png"logo" />
+                    </div>
+                    <div class="logo_text text-white">Digitalvilla</div>
+                  </div>
+                  <h2 class="left-heading" style="font-weight: 700;">Welcome Back!</h2>
+                  <span class="left-heading">
+                    To keep connected with us please login with your personel
+                    info
+                  </span>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-custom2"
+                    style="
+                      border-radius: 24px;
+                      min-width: 120px;
+                      border-style: none;
+                      background-color: aliceblue;
+                      color: #46bb8d;
+                    "
+                  >
+                    SIGN IN
+                  </button>
+                </div>
+
+                <div class="col-7">
+                  <h2 class="right-heading" style="font-weight: 700;">Create Account</h2>
+                  <div class="social">
+                    <ul>
+                      <a href="https://www.facebook.com/">
+                        <div class="link-btn">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="https://www.google.com/account/about/">
+                        <div class="link-btn">
+                          <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="https://in.linkedin.com/">
+                        <div class="link-btn">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                      </a>
+                    </ul>
+                  </div>
+                  <span>or use your email for registration</span>
+                  <div class="form-grp">
+                    <form>
+                      <div class="mb-3">
+                        <div class="icon">
+                          <i class="fa-regular fa-user"></i>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputName1"
+                          aria-describedby="NameHelp"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <div class="icon">
+                          <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="nameHelp"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <div class="icon">
+                          <i class="fa-solid fa-unlock-keyhole"></i>
+                        </div>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Password"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-custom"
+                        style="
+                          border-radius: 24px;
+                          min-width: 120px;
+                          border-style: none;
+                          background-color: rgba(70, 187, 141, 0.7);
+                        "
+                      >
+                        SIGN UP
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/1cc3760187.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
