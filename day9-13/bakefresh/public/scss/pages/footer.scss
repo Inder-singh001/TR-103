@@ -1,0 +1,62 @@
+@import "title";
+%shape_prop {
+  @extend %shape-props;
+  background-color: rgba(255, 246, 246, 0.15);
+  width: 138.83px;
+  height: 509.43px;
+  transform: rotate(-31.15deg);
+}
+.footer_section {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  height: 504px;
+  padding-top: 78px;
+
+  .shape1 {
+    @extend %shape_prop;
+    top: -260.19px;
+    left: -133.58px;
+  }
+  .shape2 {
+    @extend %shape_prop;
+    top: -365.19px;
+    left: -22.58px;
+  }
+  .link_title {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24.5px;
+      text-align: left;
+      margin-bottom: 13px;
+    }
+  }
+  .link_area {
+    ul {
+      li {
+        .social_icon {
+          display: inline-flex;
+          .brand_icon {
+            margin-right: 12px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use "../pages/base.scss";
+
+
+
+.title{
+  color: base.$primary-color;
+  background-color: base.$color;
+  text-align: center;
+}

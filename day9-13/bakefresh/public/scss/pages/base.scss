@@ -1,0 +1,91 @@
+@use "../global.scss";
+@import "./header";
+$color: red;
+$primary-color: #64ff00;
+
+.text {
+  color: $color;
+}
+.container {
+  width: var(--max-width);
+  text-align: center;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+  border: 0.5px solid rgba(255, 177, 196, 1);
+  box-shadow: 0 1px 2px 0 rgba(247, 127, 157, 0.244),
+    0 2px 6px 0 rgba(247, 127, 157, 0.254);
+
+  &:hover {
+    scale: 1.05;
+    border: 0.5px solid rgba(255, 177, 196, 1);
+    box-shadow: 0 4px 8px 0 rgba(247, 127, 157, 0.244),
+      0 4px 12px 0 rgba(247, 127, 157, 0.254);
+  }
+}
+.free_tag {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  min-width: 56px;
+  z-index: 1;
+  padding: 3px 9px;
+  box-shadow: 0 3px 6px 0px rgba(247, 127, 157, 0.254),
+    0 2px 20px 0 rgba(247, 127, 157, 0.37);
+}
+.free_text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  color: #f77f9d;
+}
+.card-body {
+  position: relative;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-top: -12px;
+}
+.card-text {
+  font-size: 30px;
+  line-height: 29.57px;
+  text-align: left;
+  font-weight: 600;
+}
+.card-link {
+  color: #f77f9d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+}
+.circle {
+  background-color: #f77f9d;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  margin-bottom: -40px;
+  right: -25px;
+  border-radius: 50%;
+}
+.card-body .circle i {
+  text-align: center;
+  left: 35px;
+  top: 25px;
+  position: absolute;
+  transform: rotate(45deg);
+  font-size: 24px;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-body .circle i {
+  transform: rotate(90deg);
+  font-size: 30px;
+}

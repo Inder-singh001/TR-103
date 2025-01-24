@@ -1,0 +1,15 @@
+.card {
+  background-color: #e31e1e;
+  border-radius: 10px;
+  border: 1px;
+
+  .card-body {
+    margin: 28px;
+    Image {
+      margin-bottom: 25px;
+    }
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+}
